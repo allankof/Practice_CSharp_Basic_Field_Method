@@ -41,12 +41,10 @@ public class Car : MonoBehaviour
     public void TurnLeft()
     {
         car.transform.Rotate(0, -0.5f * speedTurn, 0);
-        car.Translate(Vector3.forward * Time.deltaTime * speedMove);
     }
     public void TurnRight()
     {
         car.transform.Rotate(0, 0.5f * speedTurn, 0);
-        car.Translate(Vector3.forward * Time.deltaTime * speedMove);
     }
 
 
